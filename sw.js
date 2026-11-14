@@ -1,5 +1,5 @@
-// 版本 1.3.5：網路優先，失敗時用快取；version.json 一律走網路
-const CACHE = "cards-v1.3.5";
+// 版本 1.4.0：網路優先，失敗時用快取；version.json 一律走網路
+const CACHE = "cards-v1.4.0";
 const FILES = ["./", "./index.html", "./manifest.webmanifest", "./icon-192.png", "./icon-512.png"];
 self.addEventListener("install", e => { e.waitUntil(caches.open(CACHE).then(c => c.addAll(FILES))); self.skipWaiting(); });
 self.addEventListener("activate", e => {
